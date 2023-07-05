@@ -9,7 +9,7 @@ export function renderTabConfig(elem, theme) {
     const settingsTemplate = document.createElement("template");
     settingsTemplate["innerHTML"] = `
     <div class="wrapper ${theme}">
-        <p class="title">Welcome to Flappy bird!</p>
+        <p class="title">Welcome to Sssnakes & Ladders!</p>
         <p class="text">Press the save button to continue.</p>
     </div>
     `;
@@ -20,8 +20,8 @@ export function renderTabConfig(elem, theme) {
         pages.config.setConfig({
             websiteUrl: window.location.origin,
             contentUrl: window.location.origin + "?inTeams=1&view=content",
-            entityId: "FlappyBird",
-            suggestedDisplayName: "Flappy Bird",
+            entityId: "Snakes&Ladders",
+            suggestedDisplayName: "Snakes & Ladders",
         });
         saveEvent.notifySuccess();
     });
